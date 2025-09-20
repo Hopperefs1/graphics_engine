@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Site BuildName="Linux-c++"
+	BuildStamp="20250602-1434-Experimental"
+	Name="ArchLinux"
+	Generator="ctest-4.0.2-dirty"
+	CompilerName="/usr/bin/c++"
+	CompilerVersion="15.1.1"
+	OSName="Linux"
+	Hostname="ArchLinux"
+	OSRelease="6.15.2-arch1-1"
+	OSVersion="#1 SMP PREEMPT_DYNAMIC Tue, 10 Jun 2025 21:32:33 +0000"
+	OSPlatform="x86_64"
+	Is64Bits="1"
+	VendorString="GenuineIntel"
+	VendorID="Intel Corporation"
+	FamilyID="6"
+	ModelID="140"
+	ModelName="11th Gen Intel(R) Core(TM) i3-1125G4 @ 2.00GHz"
+	ProcessorCacheSize="8192"
+	NumberOfLogicalCPU="8"
+	NumberOfPhysicalCPU="4"
+	TotalVirtualMemory="4095"
+	TotalPhysicalMemory="7679"
+	LogicalProcessorsPerPhysical="2"
+	ProcessorClockFrequency="3249.06"
+	>
+	<Testing>
+		<StartDateTime>Jun 18 18:09 IST</StartDateTime>
+		<StartTestTime>1750250355</StartTestTime>
+		<TestList/>
+		<EndDateTime>Jun 18 18:09 IST</EndDateTime>
+		<EndTestTime>1750250355</EndTestTime>
+		<ElapsedMinutes>0</ElapsedMinutes>
+	</Testing>
+</Site>

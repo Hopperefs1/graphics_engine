@@ -1,0 +1,1 @@
+/usr/bin/c++ -g -Wl,--dependency-file=CMakeFiles/BRAINLESS.dir/link.d CMakeFiles/BRAINLESS.dir/src/main.cpp.o CMakeFiles/BRAINLESS.dir/src/glad.c.o -o BRAINLESS  /usr/local/lib/libglfw3.a /usr/lib/librt.a -lm -ldl /usr/lib/libGLX.so /usr/lib/libOpenGL.so
