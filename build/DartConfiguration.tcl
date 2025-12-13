@@ -4,8 +4,8 @@
 
 
 # Configuration directories and files
-SourceDirectory: /home/sounava/professional/personal projects/brainless
-BuildDirectory: /home/sounava/professional/personal projects/brainless/build
+SourceDirectory: /home/hopperefs/work/projects/graphics_engine
+BuildDirectory: /home/hopperefs/work/projects/graphics_engine/build
 
 # Where to place the cost data store
 CostDataFile: 
@@ -27,7 +27,7 @@ SubmitInactivityTimeout:
 NightlyStartTime: 00:00:00 EDT
 
 # Commands for the build/test/submit cycle
-ConfigureCommand: "/usr/bin/cmake" "/home/sounava/professional/personal projects/brainless"
+ConfigureCommand: "/usr/bin/cmake" "/home/hopperefs/work/projects/graphics_engine"
 MakeCommand: /usr/bin/cmake --build . --config "${CTEST_CONFIGURATION_TYPE}"
 DefaultCTestConfigurationType: Release
 
@@ -45,7 +45,7 @@ SVNOptions:
 SVNUpdateOptions: 
 
 # Git options
-GITCommand: 
+GITCommand: /usr/bin/git
 GITInitSubmodules: 
 GITUpdateOptions: 
 GITUpdateCustom: 
@@ -58,13 +58,13 @@ P4UpdateOptions:
 P4UpdateCustom: 
 
 # Generic update command
-UpdateCommand: 
+UpdateCommand: /usr/bin/git
 UpdateOptions: 
-UpdateType: 
+UpdateType: git
 
 # Compiler info
 Compiler: /usr/bin/c++
-CompilerVersion: 15.1.1
+CompilerVersion: 15.2.1
 
 # Dynamic analysis (MemCheck)
 PurifyCommand: 

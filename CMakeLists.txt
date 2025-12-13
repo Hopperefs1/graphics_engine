@@ -5,11 +5,7 @@ cmake_policy(SET CMP0072 NEW)
 find_package(OpenGL REQUIRED)
 find_package(glfw3 REQUIRED)
 
-add_executable(BRAINLESS 
-src/main.cpp
-src/glad.h
-src/glad.c)
-
+add_executable(BRAINLESS src/main.cpp src/glad.h src/glad.c)
 target_link_libraries(BRAINLESS glfw OpenGL::GL)
 include(CTest)
 enable_testing()

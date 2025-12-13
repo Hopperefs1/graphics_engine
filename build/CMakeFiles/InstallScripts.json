@@ -1,7 +1,7 @@
 {
 	"InstallScripts" : 
 	[
-		"/home/sounava/professional/personal projects/brainless/build/cmake_install.cmake"
+		"/home/hopperefs/work/projects/graphics_engine/build/cmake_install.cmake"
 	],
 	"Parallel" : false
 }

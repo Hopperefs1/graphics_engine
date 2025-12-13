@@ -8,8 +8,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/sounava/professional/personal projects/brainless/src/glad.c" "CMakeFiles/BRAINLESS.dir/src/glad.c.o" "gcc" "CMakeFiles/BRAINLESS.dir/src/glad.c.o.d"
-  "/home/sounava/professional/personal projects/brainless/src/main.cpp" "CMakeFiles/BRAINLESS.dir/src/main.cpp.o" "gcc" "CMakeFiles/BRAINLESS.dir/src/main.cpp.o.d"
+  "/home/hopperefs/work/projects/graphics_engine/src/glad.c" "CMakeFiles/BRAINLESS.dir/src/glad.c.o" "gcc" "CMakeFiles/BRAINLESS.dir/src/glad.c.o.d"
+  "/home/hopperefs/work/projects/graphics_engine/src/main.cpp" "CMakeFiles/BRAINLESS.dir/src/main.cpp.o" "gcc" "CMakeFiles/BRAINLESS.dir/src/main.cpp.o.d"
   "" "BRAINLESS" "gcc" "CMakeFiles/BRAINLESS.dir/link.d"
   )
 
