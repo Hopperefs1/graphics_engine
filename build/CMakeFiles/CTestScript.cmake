@@ -2,7 +2,7 @@
 # If you choose not to use CMake, this file may be hand configured, by
 # filling in the required variables.
 
-cmake_minimum_required(VERSION 4.2.0)
+cmake_minimum_required(VERSION 4.2.1)
 
 # CTest Start Step
 set(CTEST_SOURCE_DIRECTORY "/home/hopperefs/work/projects/graphics_engine")
