@@ -9,8 +9,9 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/hopperefs/work/projects/graphics_engine/Dependencies/glad.c" "CMakeFiles/BRAINLESS.dir/Dependencies/glad.c.o" "gcc" "CMakeFiles/BRAINLESS.dir/Dependencies/glad.c.o.d"
+  "/home/hopperefs/work/projects/graphics_engine/src/window.c" "CMakeFiles/BRAINLESS.dir/src/window.c.o" "gcc" "CMakeFiles/BRAINLESS.dir/src/window.c.o.d"
   "/home/hopperefs/work/projects/graphics_engine/src/main.cpp" "CMakeFiles/BRAINLESS.dir/src/main.cpp.o" "gcc" "CMakeFiles/BRAINLESS.dir/src/main.cpp.o.d"
-  "" "BRAINLESS" "gcc" "CMakeFiles/BRAINLESS.dir/link.d"
+  "" "/home/hopperefs/work/projects/graphics_engine/BRAINLESS" "gcc" "CMakeFiles/BRAINLESS.dir/link.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

@@ -1,34 +1,32 @@
-#include "dependencies.h"
+#include "camera.h"
+#include "window.h"
+#include "texture.h"
+#include "../Dependencies/glad.h"
 
-float deltaTime = 0.0f;
-float lastFrame = 0.0f;
-
-My_window mywindow;
+My_window window1;
 My_texture texture;
-Camera cam1;
+Camera3D cam1;
+
 void render(unsigned int VAO, unsigned int texture1, unsigned int texture2,
             unsigned int shaderProgram, GLFWwindow *window);
-// simple vertex shader source code store in constant char string
 int main() {
-  // INITIALIZING GLFWG
 
   cam1.cameraPos = glm::vec3(0.0f, 0.0f, 3.0f);
-  //-------------------------------
-  mywindow.width = 800;
-  mywindow.height = 600;
-  createWindow(&mywindow);
+
+  window1.width = 800;
+  window1.height = 600;
+  winInit();
+  winCt(&window1, "hello");
+  cout << "hi" << endl;
   // INITIALIZING GLAD
+  //
   if (!gladLoadGLLoader((GLADloadproc)glfwGetProcAddress)) {
     std::cout << "FAILED TO INITIALIZE GLAD" << std::endl;
-    return -1;
   }
-  glViewport(0, 0, mywindow.width, mywindow.height);
-  cout << "hello4" << endl;
+  glViewport(0, 0, window1.width, window1.height);
   //----------------------------------
 
   // TRIANGLE
-  // vertex input
-
   float vertices[] = {// positions                          // tex coords
                       -0.5f, -0.5f, -0.5f, 0.0f,  0.0f,  0.5f,  -0.5f, -0.5f,
                       1.0f,  0.0f,  0.5f,  0.5f,  -0.5f, 1.0f,  1.0f,  0.5f,
@@ -95,9 +93,16 @@ int main() {
   shader *sobj = new shader("shaders/vertex.vert", "shaders/fragment.frag");
   sobj->shader_Compile(shaderProgram);
   glUseProgram(shaderProgram);
-  createTexture(&texture, "textures/kitty.jpg", "textures/wall.jpg",
-                shaderProgram);
-  render(VAO, texture.tex1, texture.tex2, shaderProgram, mywindow.window);
+
+  tex::createTexture(&texture, "textures/kitty.jpg", "textures/wall.jpg",
+                     shaderProgram);
+
+  glActiveTexture(GL_TEXTURE0);
+  glBindTexture(GL_TEXTURE_2D, texture.tex1);
+
+  glActiveTexture(GL_TEXTURE1);
+  glBindTexture(GL_TEXTURE_2D, texture.tex2);
+  render(VAO, texture.tex1, texture.tex2, shaderProgram, window1.window);
 
   glDeleteProgram(shaderProgram);
   glDeleteBuffers(1, &VBO);
@@ -108,41 +113,28 @@ int main() {
   return 0;
 }
 
-// dont use now created problem fuck
 // function which will be called each time the glfw window is resized
-float angle = 0.0f;
+float angle = -55.0f;
 void render(unsigned int VAO, unsigned int texture1, unsigned int texture2,
             unsigned int shaderProgram, GLFWwindow *window) {
   glEnable(GL_DEPTH_TEST);
-  while (glfwWindowShouldClose(window) == false) {
-    float currentFrame = (float)glfwGetTime();
-    deltaTime = currentFrame - lastFrame;
-    lastFrame = currentFrame;
-    glClearColor(0.2f, 0.3f, 0.3f, 1.0f); // this is the colour which is shown
-                                          // when the colour buffer is cleared
-    input(&cam1, deltaTime, window);
+  while (glfwWindowShouldClose(window1.window) == false) {
+    cam1.cameraSpeed = 5.1f * winDTime(&window1);
+    winShColor(0.0f, 0.0f, 0.0f, 0.0f);
+    cam::camInput(&cam1, window1.window);
 
-    glClear(GL_COLOR_BUFFER_BIT |
-            GL_DEPTH_BUFFER_BIT); // this clears the colour buffer
-    glActiveTexture(GL_TEXTURE0);
-    glBindTexture(GL_TEXTURE_2D, texture1);
-
-    glActiveTexture(GL_TEXTURE1);
-    glBindTexture(GL_TEXTURE_2D, texture2);
     glm::mat4 model = glm::mat4(1.0f);
     model = glm::rotate(model, (float)glfwGetTime() * glm::radians(angle),
-                        glm::vec3(0.5f, 0.5f, 0.5f));
-    viewMat(&cam1, shaderProgram);
-    projectionMat(shaderProgram);
+                        glm::vec3(0.0f, 0.5f, 0.5f));
+    cam::viewMat(&cam1, shaderProgram);
+    cam::projectionMat(shaderProgram);
 
     int modelLoc = glGetUniformLocation(shaderProgram, "model");
 
     glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
     glBindVertexArray(VAO);
     glDrawArrays(GL_TRIANGLES, 0, 36);
-    glfwPollEvents(); // this processes events such as user input
-    glfwSwapBuffers(
-        window); // swaps the front buffer with the back buffer (image is
-                 // rendered in the back buffer) this prevents flickering
+    glfwPollEvents();
+    glfwSwapBuffers(window1.window);
   }
 }

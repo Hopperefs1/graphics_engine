@@ -113,12 +113,12 @@ clean: CMakeFiles/ContinuousSubmit.dir/clean
 CMakeFiles/BRAINLESS.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/BRAINLESS.dir/build.make CMakeFiles/BRAINLESS.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/BRAINLESS.dir/build.make CMakeFiles/BRAINLESS.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/hopperefs/work/projects/graphics_engine/build/CMakeFiles --progress-num=1,2,3 "Built target BRAINLESS"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/hopperefs/work/projects/graphics_engine/build/CMakeFiles --progress-num=1,2,3,4 "Built target BRAINLESS"
 .PHONY : CMakeFiles/BRAINLESS.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/BRAINLESS.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/hopperefs/work/projects/graphics_engine/build/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/hopperefs/work/projects/graphics_engine/build/CMakeFiles 4
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/BRAINLESS.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/hopperefs/work/projects/graphics_engine/build/CMakeFiles 0
 .PHONY : CMakeFiles/BRAINLESS.dir/rule
@@ -130,7 +130,7 @@ BRAINLESS: CMakeFiles/BRAINLESS.dir/rule
 # codegen rule for target.
 CMakeFiles/BRAINLESS.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/BRAINLESS.dir/build.make CMakeFiles/BRAINLESS.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/hopperefs/work/projects/graphics_engine/build/CMakeFiles --progress-num=1,2,3 "Finished codegen for target BRAINLESS"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/hopperefs/work/projects/graphics_engine/build/CMakeFiles --progress-num=1,2,3,4 "Finished codegen for target BRAINLESS"
 .PHONY : CMakeFiles/BRAINLESS.dir/codegen
 
 # clean rule for target.

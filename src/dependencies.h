@@ -2,19 +2,15 @@
 #define DEPENDENCIES_H
 
 //-custom-
-#include "camera.h"
-#include "window.h"
 #include "texture.h"
 #include "../shaders/shader.h"
 //-custom-
 
 //-external-
-#include "../Dependencies/glad.h"
 #include "../Dependencies/glm/gtc/quaternion.hpp"
 #include "../Dependencies/glm/glm.hpp"
 #include "../Dependencies/glm/gtc/matrix_transform.hpp"
 #include "../Dependencies/glm/gtc/type_ptr.hpp"
-#include <GLFW/glfw3.h>
 //-external-
 
 #include <iostream>

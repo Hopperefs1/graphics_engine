@@ -1,32 +1,25 @@
 CMakeFiles/BRAINLESS.dir/src/main.cpp.o: \
  /home/hopperefs/work/projects/graphics_engine/src/main.cpp \
  /usr/include/stdc-predef.h \
- /home/hopperefs/work/projects/graphics_engine/src/dependencies.h \
  /home/hopperefs/work/projects/graphics_engine/src/camera.h \
- /home/hopperefs/work/projects/graphics_engine/src/../Dependencies/glad.h \
- /usr/include/KHR/khrplatform.h \
- /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stdint.h \
- /usr/include/stdint.h /usr/include/bits/libc-header-start.h \
- /usr/include/features.h /usr/include/features-time64.h \
- /usr/include/bits/wordsize.h /usr/include/bits/timesize.h \
- /usr/include/sys/cdefs.h /usr/include/bits/long-double.h \
- /usr/include/gnu/stubs.h /usr/include/gnu/stubs-64.h \
- /usr/include/bits/types.h /usr/include/bits/typesizes.h \
- /usr/include/bits/time64.h /usr/include/bits/wchar.h \
- /usr/include/bits/stdint-intn.h /usr/include/bits/stdint-uintn.h \
- /usr/include/bits/stdint-least.h \
  /home/hopperefs/work/projects/graphics_engine/src/../Dependencies/glm/glm.hpp \
  /home/hopperefs/work/projects/graphics_engine/src/../Dependencies/glm/detail/_fixes.hpp \
  /usr/include/c++/15.2.1/cmath \
  /usr/include/c++/15.2.1/bits/requires_hosted.h \
  /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/c++config.h \
  /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/os_defines.h \
+ /usr/include/features.h /usr/include/features-time64.h \
+ /usr/include/bits/wordsize.h /usr/include/bits/timesize.h \
+ /usr/include/sys/cdefs.h /usr/include/bits/long-double.h \
+ /usr/include/gnu/stubs.h /usr/include/gnu/stubs-64.h \
  /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/cpu_defines.h \
  /usr/include/c++/15.2.1/pstl/pstl_config.h \
  /usr/include/c++/15.2.1/bits/cpp_type_traits.h \
  /usr/include/c++/15.2.1/bits/version.h \
  /usr/include/c++/15.2.1/type_traits \
  /usr/include/c++/15.2.1/ext/type_traits.h /usr/include/math.h \
+ /usr/include/bits/libc-header-start.h /usr/include/bits/types.h \
+ /usr/include/bits/typesizes.h /usr/include/bits/time64.h \
  /usr/include/bits/math-vector.h /usr/include/bits/libm-simd-decl-stubs.h \
  /usr/include/bits/floatn.h /usr/include/bits/floatn-common.h \
  /usr/include/bits/flt-eval-method.h /usr/include/bits/fp-logb.h \
@@ -40,11 +33,12 @@ CMakeFiles/BRAINLESS.dir/src/main.cpp.o: \
  /usr/include/bits/types/locale_t.h /usr/include/bits/types/__locale_t.h \
  /usr/include/sys/types.h /usr/include/bits/types/clock_t.h \
  /usr/include/bits/types/clockid_t.h /usr/include/bits/types/time_t.h \
- /usr/include/bits/types/timer_t.h /usr/include/endian.h \
- /usr/include/bits/endian.h /usr/include/bits/endianness.h \
- /usr/include/bits/byteswap.h /usr/include/bits/uintn-identity.h \
- /usr/include/sys/select.h /usr/include/bits/select.h \
- /usr/include/bits/types/sigset_t.h /usr/include/bits/types/__sigset_t.h \
+ /usr/include/bits/types/timer_t.h /usr/include/bits/stdint-intn.h \
+ /usr/include/endian.h /usr/include/bits/endian.h \
+ /usr/include/bits/endianness.h /usr/include/bits/byteswap.h \
+ /usr/include/bits/uintn-identity.h /usr/include/sys/select.h \
+ /usr/include/bits/select.h /usr/include/bits/types/sigset_t.h \
+ /usr/include/bits/types/__sigset_t.h \
  /usr/include/bits/types/struct_timeval.h \
  /usr/include/bits/types/struct_timespec.h \
  /usr/include/bits/pthreadtypes.h /usr/include/bits/thread-shared-types.h \
@@ -101,6 +95,9 @@ CMakeFiles/BRAINLESS.dir/src/main.cpp.o: \
  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/mm_malloc.h \
  /usr/include/c++/15.2.1/stdlib.h /usr/include/c++/15.2.1/cstdlib \
  /usr/include/c++/15.2.1/cstdint \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stdint.h \
+ /usr/include/stdint.h /usr/include/bits/wchar.h \
+ /usr/include/bits/stdint-uintn.h /usr/include/bits/stdint-least.h \
  /home/hopperefs/work/projects/graphics_engine/src/../Dependencies/glm/detail/type_float.hpp \
  /home/hopperefs/work/projects/graphics_engine/src/../Dependencies/glm/detail/type_vec.hpp \
  /home/hopperefs/work/projects/graphics_engine/src/../Dependencies/glm/detail/precision.hpp \
@@ -308,9 +305,10 @@ CMakeFiles/BRAINLESS.dir/src/main.cpp.o: \
  /home/hopperefs/work/projects/graphics_engine/src/../Dependencies/glm/gtc/type_ptr.inl \
  /home/hopperefs/work/projects/graphics_engine/src/../shaders/shader.h \
  /home/hopperefs/work/projects/graphics_engine/src/../shaders/../Dependencies/glad.h \
- /usr/local/include/GLFW/glfw3.h /usr/include/c++/15.2.1/fstream \
- /usr/include/c++/15.2.1/istream /usr/include/c++/15.2.1/ios \
- /usr/include/c++/15.2.1/iosfwd /usr/include/c++/15.2.1/bits/stringfwd.h \
+ /usr/include/KHR/khrplatform.h /usr/local/include/GLFW/glfw3.h \
+ /usr/include/c++/15.2.1/fstream /usr/include/c++/15.2.1/istream \
+ /usr/include/c++/15.2.1/ios /usr/include/c++/15.2.1/iosfwd \
+ /usr/include/c++/15.2.1/bits/stringfwd.h \
  /usr/include/c++/15.2.1/bits/memoryfwd.h \
  /usr/include/c++/15.2.1/bits/postypes.h /usr/include/c++/15.2.1/cwchar \
  /usr/include/wchar.h \
@@ -406,6 +404,8 @@ CMakeFiles/BRAINLESS.dir/src/main.cpp.o: \
  /usr/include/c++/15.2.1/iostream /usr/include/c++/15.2.1/sstream \
  /usr/include/c++/15.2.1/bits/sstream.tcc \
  /home/hopperefs/work/projects/graphics_engine/src/window.h \
+ /home/hopperefs/work/projects/graphics_engine/src/time.h \
  /home/hopperefs/work/projects/graphics_engine/src/texture.h \
+ /home/hopperefs/work/projects/graphics_engine/src/../Dependencies/glad.h \
  /home/hopperefs/work/projects/graphics_engine/src/../Dependencies/stb_image.h \
  /usr/include/c++/15.2.1/math.h

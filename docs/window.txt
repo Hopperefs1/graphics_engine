@@ -1,0 +1,17 @@
+#include "window.h" --import statement
+
+using namespace window;  --the fuctions of window.h belong to this namespace.
+
+My_window window1;      --create a struct of type My_window
+window1.width;    --width of the window
+window1.height;   -- height of the window
+
+windowinit() --should be called first to initialize glfw. [otherwise you cannot use functions unders the window namespace]
+ctWindow(My_window *window, char const *name) --pass the struct address and the name of the window as arguments
+qtWindow()           --terminates the window
+
+shColor(float r,float g, float b,float a) --pass the RGBA(RED,GREEN,BLUE,ALPHA) values[0.0-1.0] to colour the window  with.
+
+windowPE() //processes input
+updtwindow() //swaps back buffer with front buffer to remove flickering
+
