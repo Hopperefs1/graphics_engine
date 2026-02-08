@@ -2,6 +2,7 @@
 #define MY_WINDOW_H
 #include <GLFW/glfw3.h>
 #include "time.h"
+#include <stdbool.h>
 
 #ifdef __cplusplus
 extern "C" {
@@ -21,7 +22,7 @@ void winCt(My_window *window, char const *name);
 void winQt(My_window *window);
 void winOut();
 void winShColor(float r, float g, float b, float a);
-
+bool IswinClosed(My_window window);
 void winUpdate(My_window *window);
 void winPEvents() ;
 float winDTime(My_window *window);

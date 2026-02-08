@@ -91,6 +91,7 @@ public:
       std::cerr << "SHADEr PROGRAM LINKING FAILED LMAOO DED" << infoLog
                 << std::endl;
     }
+		void setMat4() 
     glDeleteShader(vertexShader);
     glDeleteShader(fragmentShader);
   }

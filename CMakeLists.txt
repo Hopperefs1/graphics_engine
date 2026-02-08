@@ -13,7 +13,7 @@ Grapixy/Dependencies/glad.h
 )
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_SOURCE_DIR}/)
 
-add_executable(BRAINLESS src/main.cpp ${HOPPOLIB_SOURCES})
+add_executable(BRAINLESS src/main.cpp ${GRAPIXY_SOURCES})
 target_link_libraries(BRAINLESS glfw OpenGL::GL)
 include(CTest)
 enable_testing()

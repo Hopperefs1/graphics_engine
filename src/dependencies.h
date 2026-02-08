@@ -2,8 +2,8 @@
 #define DEPENDENCIES_H
 
 //-custom-
-#include "texture.h"
-#include "../shaders/shader.h"
+#include "../Grapixy/texture.h"
+#include "../Grapixy/shaders/shader.h"
 //-custom-
 
 //-external-

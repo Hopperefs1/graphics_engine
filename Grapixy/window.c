@@ -12,7 +12,7 @@ void winInit() {
   glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 3);
   glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
 }
-void winCt(My_window *window, char const *name) {
+void winCt(My_window *window,char const *name) {
   // CREATING WINDOW
   window->window =
       glfwCreateWindow(window->width, window->height, "hello", NULL, NULL);
@@ -32,9 +32,6 @@ glfwSetWindowShouldClose(window->window,GLFW_TRUE);
 }
 void winOut() { glfwTerminate(); }
 void winShColor(float r, float g, float b, float a) {
-  glClearColor(r, g, b, a); // sets the window colour
-  glClear(GL_COLOR_BUFFER_BIT |
-          GL_DEPTH_BUFFER_BIT); // clears the color buffer and the z-buffer for
                                 // depth testing
 }
 
@@ -50,4 +47,7 @@ float winDTime(My_window *window) {
   float deltaTime = window->time.currentFrame - window->time.lastFrame;
   window->time.lastFrame = window->time.currentFrame;
   return deltaTime;
+}
+bool IswinClosed(My_window window){
+	return glfwWindowShouldClose(window.window);
 }
